@@ -1,0 +1,88 @@
+.menu{
+  width: 80%;
+  height: 90%;
+  /*background-color: #088385;*/
+  background-color: #f1f1f1;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  border-radius: 30px 30px 30px 30px;
+  padding-top : 10px;
+  padding-bottom: 10px;
+}
+
+.game-view {
+  padding: 0;
+  margin: auto;
+
+  width: 600px;
+  height: 600px;
+  display: block;
+
+  border:1px solid #000000;
+}
+
+.question {
+  margin : 10px;
+}
+
+.title{
+  font-weight: bold;
+  /*color: #088385;*/
+  padding: 5px;
+}
+
+.title-div {
+  /*background-color: #055354;*/
+  background-color: #888888;
+}
+
+/* Generally the colour should be*/
+/*
+.* {
+  color: #022424;
+  font-family: Verdana Arial;
+}
+
+.btn-primary {
+  background-color: #088385;
+  border: 2px solid #000;
+  color:#022424;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+  background-color: #055354;
+  border: 2px solid #000;
+  color:#022424;
+  box-shadow: none;
+}
+
+.btn-success:active:focus{
+  outline: 0 none;
+  background-color: #055354;
+  border: 2px solid #000;
+  color:#022424;
+  box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background-color: #055354;
+  border: 2px solid #000;
+  color:#022424;
+  box-shadow: none;
+}
+
+.btn-primary:active, .btn-primary.active {
+  background-color: #055354;
+  border: 2px solid #000;
+  color:#022424;
+  box-shadow: none;
+}
+
+
+body {
+  background-color: #1a1a1a;
+}
+*/

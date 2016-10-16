@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'run', 'dev' ]
+2 info using npm@1.4.21
+3 info using node@v4.3.1
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info predev conflictResolutionTraining@1.0.0
+6 info dev conflictResolutionTraining@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info conflictResolutionTraining@1.0.0 Failed to exec dev script
+9 error conflictResolutionTraining@1.0.0 dev: `webpack-dev-server --port 8000 --progress --colors --inline --hot`
+9 error Exit status 1
+10 error Failed at the conflictResolutionTraining@1.0.0 dev script.
+10 error This is most likely a problem with the conflictResolutionTraining package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     webpack-dev-server --port 8000 --progress --colors --inline --hot
+10 error You can get their info via:
+10 error     npm owner ls conflictResolutionTraining
+10 error There is likely additional logging output above.
+11 error System Linux 4.6.0-1-amd64
+12 error command "/usr/bin/nodejs" "/usr/bin/npm" "run" "dev"
+13 error cwd /home/laurie/Documents/Project N/aries/aries-webapp/src/main/resources/angular
+14 error node -v v4.3.1
+15 error npm -v 1.4.21
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]
