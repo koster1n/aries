@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --port 8000 --progress --colors --inline --hot",
     "deploy": "webpack --config webpack.deploy.js -p"
   },
-  "author": "",
+  "author": "Nikia",
   "licence": "MIT",
   "devDependencies": {
     "css-loader": "^0.23.0",
