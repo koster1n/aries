@@ -25,7 +25,7 @@ module.exports = function(options) {
 	config.output = {
         path: path.resolve(__dirname, './resources/public/js/webpack'),
         filename: 'app.bundle.js',
-        publicPath: "./js/webpack/"
+        publicPath: "/js/webpack/"
     }
 
 	config.node = {
