@@ -1,0 +1,7 @@
+package com.aries.controllers;
+
+@Controller
+@RequestMapping(value = "/api/test")
+public class ConsultantController {
+
+}

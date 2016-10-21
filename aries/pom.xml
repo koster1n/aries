@@ -8,8 +8,11 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.2.3.RELEASE</version>
 	</parent>
+	
 	<modules>
 		<module>aries-webapp</module>
+		<module>aries-client</module>
+		<module>aries-server</module>
 	</modules>
 
 	<groupId>com.aries</groupId>
@@ -19,6 +22,13 @@
 	<name>aries</name>
 	<url>http://maven.apache.org</url>
 
+	<repositories>
+	    <repository>
+	      <id>central</id>
+	      <url>http://central.maven.org/maven2/</url>
+	    </repository>
+	 </repositories>
+ 
 	<build>
 		<plugins>
 			<plugin>

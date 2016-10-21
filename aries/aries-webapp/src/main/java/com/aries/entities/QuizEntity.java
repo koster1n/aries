@@ -1,0 +1,5 @@
+package com.aries.entities;
+
+public class QuizEntity {
+
+}

@@ -1,0 +1,5 @@
+package com.aries.dto;
+
+public class QuizDTO {
+
+}

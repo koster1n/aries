@@ -2,9 +2,13 @@
 <workingSetManager>
 <workingSet editPageId="org.springframework.ide.eclipse.ui.springWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1476327049325_1" label="aries" name="aries">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries-webapp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries-client" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries-webapp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries-client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/aries-server" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1475967837169_0" label="Window Working Set" name="Aggregate for window 1475967837169"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1476583151090_2" label="Window Working Set" name="Aggregate for window 1476583151089"/>

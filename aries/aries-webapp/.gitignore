@@ -1,0 +1,13 @@
+/node_modules
+/node_modules/*
+*.log
+/**/js/
+/**/node_modules/
+/**/webpack/
+/**/target/
+/**/bin/
+/**/dist/
+/**/.classpath
+/**/.project
+/**/.settings/
+/**/rebel.xml
