@@ -1,0 +1,10 @@
+package com.aries.entities;
+
+public class QuizEntity {
+	
+}
+
+public class question {
+	private <String> question
+	
+}

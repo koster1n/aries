@@ -5,6 +5,8 @@ module.exports = function(app) {
 }
 
 function QuizController($scope, QuizService) {
-	$scope.questions = QuizService.getQuiz(0);
-	
+	$scope.questionsPromise = QuizService.getQuiz(0).then(function(data){
+		$scope.quiz = data;
+	});
+
 }

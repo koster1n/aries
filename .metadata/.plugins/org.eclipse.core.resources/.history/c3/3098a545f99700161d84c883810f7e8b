@@ -1,0 +1,16 @@
+package com.aries.DTO;
+
+
+
+public class QuizDTO {
+	private List<Question> questions;
+
+	public List<Queston> getQuestions() {
+		return questions;
+	}
+
+	public void setQuestions(List<Quesiton> questions) {
+		this.questions = questions;
+	}
+	
+}

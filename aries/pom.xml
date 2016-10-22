@@ -10,6 +10,7 @@
 	</parent>
 	
 	<modules>
+		<module>aries-api</module>
 		<module>aries-webapp</module>
 		<module>aries-client</module>
 		<module>aries-server</module>

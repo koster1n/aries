@@ -1,0 +1,6 @@
+package com.aries.entities;
+
+public class QuizEntity {
+	private List<Quesiton> questions;
+	
+}
