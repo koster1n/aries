@@ -1,4 +1,0 @@
-package com.aries.dto;
-
-public class QuizDTO {
-	private List<string> questions;

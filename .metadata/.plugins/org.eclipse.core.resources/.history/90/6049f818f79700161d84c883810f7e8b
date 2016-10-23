@@ -1,6 +1,0 @@
-package com.aries.entities;
-
-public class Question {
-	private String question;
-	private List<String> answers;
-}

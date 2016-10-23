@@ -1,6 +1,0 @@
-INDEX VERSION 1.129+/home/laurie/Documents/Project N/.metadata/.plugins/org.eclipse.jdt.core
-3649398136.index
-1341559711.index
-3537846844.index
-13125663.index
-3034345313.index
