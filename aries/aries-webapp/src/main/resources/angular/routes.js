@@ -2,6 +2,8 @@
 
 module.exports = function(app){
 	app.config(routes);
+
+	app.run(routeIntercept);
 }
 
 function routes($urlRouterProvider, $stateProvider) {
@@ -10,31 +12,37 @@ function routes($urlRouterProvider, $stateProvider) {
 
     $stateProvider
 		.state('conflict', {
-				url:'',
-				template : require('html!./conflict/conflict.view.html')
+			url:'',
+			template : require('html!./conflict/conflict.view.html')
 		})
 
 		.state('conflict.home', {
-				url:'/home',
-				template : require('html!./home/home.view.html'),
-				controller : 'HomeController'
+			title: "Home",
+			url:'/home',
+			template : require('html!./home/home.view.html'),
+			controller : 'HomeController'
 		})
 
-		.state('conflict.quiz', {
-				url:'/quiz/:id',
-				template : require('html!./quiz/quiz.view.html'),
-				controller : 'QuizController',
-				params: {
-					id : null
-				}
+		.state('conflict.approach1', {
+			title: "Approach",
+			url:'/approach1',
+			template : require('html!./approach1/approach1.view.html'),
+			controller : 'QuizController',
 		})
 
 		.state('conflict.game1', {
-				url:'/game1',
-				template : require('html!./game1/game1.view.html'),
-				controller : 'Game1Controller',
-				params: {
-					id : null
-				}
+			title: "Game",
+			url:'/game1',
+			template : require('html!./game1/game1.view.html'),
+			controller : 'Game1Controller',
+			params: {
+				id : null
+			}
 		})
+}
+
+function routeIntercept($rootScope, $state, $http) {
+	$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+		$rootScope.pageTitle = toState.title;
+	});
 }
