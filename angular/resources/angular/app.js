@@ -26,6 +26,6 @@ require('./quiz/quiz.js')(module);
 
 require('./routes.js')(module);
 
-// angular.element(document).ready(function() {
-//   angular.bootstrap(document, [module.name]);
-// });
+angular.element(document).ready(function() {
+  angular.bootstrap(document, [module.name]);
+});
