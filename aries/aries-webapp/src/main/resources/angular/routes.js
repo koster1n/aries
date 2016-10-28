@@ -31,7 +31,6 @@ function routes($urlRouterProvider, $stateProvider) {
 		})
 
 		.state('conflict.game1', {
-			title: "Game",
 			url:'/game1',
 			template : require('html!./game1/game1.view.html'),
 			controller : 'Game1Controller',
