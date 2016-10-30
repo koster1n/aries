@@ -2,15 +2,23 @@
 <html>
 	<head>
 		<title ng-bind="pageTitle"></title>
+
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="icon" type="image/svg" href="./favicon.svg">
 		<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+
   </head>
 	<body>
-		<div ui-view></div>
+		<!--[if (IE) & (lt IE 9)]>
+			<div>Hey Professor please use a newer browser.</div>
+		<![endif]-->
+		<!--[if !(IE) | (IE 9)]><!-->
+		<div class="container">
+			<div ui-view></div>
 		</div>
 
 		<script type="text/javascript" src="./js/webpack/vendor.bundle.js"></script>
