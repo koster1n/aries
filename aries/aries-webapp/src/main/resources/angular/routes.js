@@ -23,6 +23,16 @@ function routes($urlRouterProvider, $stateProvider) {
 			controller : 'HomeController'
 		})
 
+		.state('conflict.informationPage', {
+			title: "informationPage",
+			url:'/informationPage',
+			template : require('html!./informationPage/informationPage.view.html'),
+			controller : 'InformationPageController',
+			params: {
+				id : null
+			}
+		})
+
 		.state('conflict.approach1', {
 			title: "Approach",
 			url:'/approach1',
