@@ -18,6 +18,7 @@ require("bootstrap-webpack");
 require('./home/home.controller.js')(module);
 
 require('./approach1/approach1.controller.js')(module);
+require('./informationPage/informationPage.controller.js')(module);
 
 require('./game1/game1.controller.js')(module);
 

@@ -6,4 +6,5 @@ module.exports = function(app) {
 
 function Approach1($scope) {
 
+	var data = "";
 }

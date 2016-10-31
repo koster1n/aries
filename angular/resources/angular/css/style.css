@@ -2,7 +2,7 @@
   width: 80%;
   height: 90%;
   /*background-color: #088385;*/
-  background-color: #d1dfa2;
+  background-color: #b16eb6;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
@@ -42,7 +42,17 @@ body {
   background-color: #a8e2d2;
 }
 
+.approach-content {
+  margin: 10px;
+}
 
+.approach-bullet-points {
+  font-size: 14px
+}
+
+#id1 .approach-bullet-points > a .btn-default{
+  font-size: 45px !important;
+}
 
 
 
