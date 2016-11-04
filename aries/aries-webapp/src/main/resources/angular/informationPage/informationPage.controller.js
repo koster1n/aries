@@ -4,7 +4,11 @@ module.exports = function(app) {
 	app.controller('InformationPageController', InformationPageController);
 }
 
-function InformationPageController($scope) {
+function InformationPageController($scope, $stateParams, ContentService) {
+
+	$scope.info = ContentService.getContentInfo($stateParams.id);
+
+
   $scope.info = {};
   $scope.test = "test";
   $scope.info.headlines = [];
@@ -18,6 +22,7 @@ function InformationPageController($scope) {
 
   $scope.info.citeing = "koster 2016";
 
-  console.log($scope);
+	$scope.id = $stateParams.id;
+
 
 }

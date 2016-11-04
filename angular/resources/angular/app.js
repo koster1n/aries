@@ -17,13 +17,15 @@ require("bootstrap-webpack");
 
 require('./home/home.controller.js')(module);
 
-require('./approach1/approach1.controller.js')(module);
+require('./approach/approach.controller.js')(module);
 require('./informationPage/informationPage.controller.js')(module);
 
-require('./game1/game1.controller.js')(module);
+require('./fun/fun.controller.js')(module);
+
 
 //directives.
 require('./quiz/quiz.js')(module);
+require('./services/content.service.js')(module);
 
 require('./routes.js')(module);
 

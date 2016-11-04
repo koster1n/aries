@@ -25,7 +25,7 @@ function routes($urlRouterProvider, $stateProvider) {
 
 		.state('conflict.informationPage', {
 			title: "informationPage",
-			url:'/informationPage',
+			url:'/informationPage/:id',
 			template : require('html!./informationPage/informationPage.view.html'),
 			controller : 'InformationPageController',
 			params: {
@@ -33,20 +33,20 @@ function routes($urlRouterProvider, $stateProvider) {
 			}
 		})
 
-		.state('conflict.approach1', {
+		.state('conflict.approach', {
 			title: "Approach",
-			url:'/approach1',
-			template : require('html!./approach1/approach1.view.html'),
-			controller : 'QuizController',
-		})
-
-		.state('conflict.game1', {
-			url:'/game1',
-			template : require('html!./game1/game1.view.html'),
-			controller : 'Game1Controller',
+			url:'/approach/:id',
+			template : require('html!./approach/approach.view.html'),
+			controller : 'ApproachController',
 			params: {
 				id : null
 			}
+		})
+
+		.state('fun', {
+			url:'/fun',
+			template : require('html!./fun/fun.view.html'),
+			controller : 'FunController',
 		})
 }
 

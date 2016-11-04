@@ -37,7 +37,7 @@
   /*background-color: #055354;*/
   background-color: #888888;
 }
-/*I like cheese. Laurie don't change this*/
+
 body {
   background-color: #a8e2d2;
 }
@@ -54,55 +54,8 @@ body {
   font-size: 45px !important;
 }
 
-
-
-
-
-/* Generally the colour should be*/
-/*
-.* {
-  color: #022424;
-  font-family: Verdana Arial;
+.content-main {
+  white-space: pre-wrap;
 }
 
-.btn-primary {
-  background-color: #088385;
-  border: 2px solid #000;
-  color:#022424;
-}
-
-.btn:focus, .btn:active:focus, .btn.active:focus {
-  outline: 0 none;
-  background-color: #055354;
-  border: 2px solid #000;
-  color:#022424;
-  box-shadow: none;
-}
-
-.btn-success:active:focus{
-  outline: 0 none;
-  background-color: #055354;
-  border: 2px solid #000;
-  color:#022424;
-  box-shadow: none;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-  background-color: #055354;
-  border: 2px solid #000;
-  color:#022424;
-  box-shadow: none;
-}
-
-.btn-primary:active, .btn-primary.active {
-  background-color: #055354;
-  border: 2px solid #000;
-  color:#022424;
-  box-shadow: none;
-}
-
-
-body {
-  background-color: #1a1a1a;
-}
-*/
+margin: 10px

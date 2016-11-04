@@ -26,6 +26,7 @@ function QuizController($scope, QuizService) {
 function QuizService($http) {
 	return {
 		getQuiz : function (quizId) {
+			
 			return $http.get("./api/quiz/" +quizId).then(function(response) {
 				return response.data;
 			});
