@@ -15,9 +15,149 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="favcon.svg">
+   sodipodi:docname="favicon.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <filter
+       inkscape:label="Dragee"
+       inkscape:menu="Ridges"
+       inkscape:menu-tooltip="Gel Ridge with a pearlescent look"
+       height="1.5"
+       width="1.5"
+       y="-0.25"
+       x="-0.25"
+       style="color-interpolation-filters:sRGB;"
+       id="filter4339">
+      <feGaussianBlur
+         stdDeviation="0.01"
+         result="result1"
+         id="feGaussianBlur4341" />
+      <feBlend
+         in="result1"
+         mode="screen"
+         result="result5"
+         in2="result1"
+         id="feBlend4343" />
+      <feGaussianBlur
+         stdDeviation="6"
+         result="result6"
+         id="feGaussianBlur4345" />
+      <feComposite
+         operator="xor"
+         result="fbSourceGraphic"
+         in="result6"
+         in2="result6"
+         id="feComposite4347" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 2 0 "
+         id="feColorMatrix4349" />
+      <feGaussianBlur
+         result="result0"
+         in="fbSourceGraphicAlpha"
+         stdDeviation="2"
+         id="feGaussianBlur4351" />
+      <feSpecularLighting
+         specularExponent="35"
+         specularConstant="1"
+         surfaceScale="3"
+         lighting-color="rgb(255,255,255)"
+         result="result1"
+         in="result0"
+         id="feSpecularLighting4353">
+        <feDistantLight
+           azimuth="235"
+           elevation="55"
+           id="feDistantLight4355" />
+      </feSpecularLighting>
+      <feComposite
+         operator="in"
+         result="result2"
+         in="result1"
+         in2="fbSourceGraphicAlpha"
+         id="feComposite4357" />
+      <feComposite
+         k3="1"
+         k2="1"
+         operator="arithmetic"
+         result="result4"
+         in="fbSourceGraphic"
+         in2="result2"
+         id="feComposite4359" />
+      <feComposite
+         operator="out"
+         in="result9"
+         in2="result4"
+         result="result91"
+         id="feComposite4361" />
+      <feBlend
+         mode="multiply"
+         in2="result91"
+         id="feBlend4363" />
+    </filter>
+    <filter
+       inkscape:label="Carnaval"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="White splotches evocating carnaval masks"
+       style="color-interpolation-filters:sRGB;"
+       id="filter4443">
+      <feGaussianBlur
+         stdDeviation="0.01"
+         result="result8"
+         id="feGaussianBlur4445" />
+      <feTurbulence
+         baseFrequency="0.025 0.028"
+         numOctaves="5"
+         type="turbulence"
+         result="result7"
+         seed="3"
+         id="feTurbulence4447" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -2.4 "
+         result="result5"
+         id="feColorMatrix4449" />
+      <feComposite
+         in2="result7"
+         operator="in"
+         in="result8"
+         result="result6"
+         id="feComposite4451" />
+      <feDisplacementMap
+         in2="result6"
+         result="result4"
+         scale="40"
+         yChannelSelector="A"
+         xChannelSelector="R"
+         in="result5"
+         id="feDisplacementMap4453" />
+      <feFlood
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1"
+         result="result10"
+         id="feFlood4455" />
+      <feComposite
+         in2="result4"
+         operator="in"
+         result="result2"
+         id="feComposite4457" />
+      <feComposite
+         in2="result8"
+         operator="in"
+         in="result2"
+         result="result9"
+         id="feComposite4459" />
+      <feBlend
+         mode="normal"
+         in2="result8"
+         result="result11"
+         id="feBlend4461" />
+      <feBlend
+         mode="multiply"
+         in2="result11"
+         id="feBlend4463" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,9 +165,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="9.2804185"
-     inkscape:cy="4.3200047"
+     inkscape:zoom="27.577275"
+     inkscape:cx="10.019724"
+     inkscape:cy="3.7800573"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,18 +198,6 @@
      transform="translate(0,-1036.3622)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:13.08317089px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="2.5142174"
-       y="1365.2634"
-       id="text3404-3"
-       sodipodi:linespacing="125%"
-       transform="scale(1.3017467,0.76819861)"><tspan
-         sodipodi:role="line"
-         id="tspan3406-6"
-         x="2.5142174"
-         y="1365.2634">R</tspan></text>
-    <text
-       xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="0.58035713"
        y="1052.63"
@@ -78,18 +206,73 @@
          sodipodi:role="line"
          id="tspan3402"
          x="0.58035713"
-         y="1052.63"></tspan></text>
+         y="1052.63" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:17.88246536px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#550000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-17.43544"
-       y="1225.3264"
-       id="text3404"
+       style="font-style:normal;font-weight:normal;font-size:18.72037506px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#253922;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4339)"
+       x="-192.02968"
+       y="1083.6769"
+       id="text4145"
        sodipodi:linespacing="125%"
-       transform="matrix(1.1658662,-0.03371514,0.015968,0.85726959,0,0)"><tspan
+       transform="matrix(0.86432553,0.03826159,0.15464071,0.76072553,1.5835094,232.33109)"><tspan
          sodipodi:role="line"
-         id="tspan3406"
-         x="-17.43544"
-         y="1225.3264">C</tspan></text>
+         id="tspan4147"
+         x="-192.02968"
+         y="1083.6769">N</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="20.580357"
+       y="1043.7908"
+       id="text4153"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4155"
+         x="20.580357"
+         y="1043.7908" /></text>
+    <rect
+       style="opacity:0;fill:#008000;fill-opacity:1"
+       id="rect4161"
+       width="10.487137"
+       height="18.33326"
+       x="-10.102524"
+       y="1038.3879"
+       rx="0.14784555"
+       ry="3.997371" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="20.230688"
+       y="1040.7212"
+       id="text4199"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4201"
+         x="20.230688"
+         y="1040.7212"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.38882828px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#253922;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4443)"
+       x="-196.77145"
+       y="1107.7053"
+       id="text4145-3"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.0509574,0.04964219,0.18803193,0.98699713,0.02277223,-32.049985)"><tspan
+         sodipodi:role="line"
+         id="tspan4147-3"
+         x="-196.77145"
+         y="1107.7053">N</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.18813324px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#253922;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-191.38863"
+       y="1077.9132"
+       id="text4145-7"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.0254687,0.04949239,0.18347162,0.98401877,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4147-32"
+         x="-191.38863"
+         y="1077.9132">N</tspan></text>
   </g>
 </svg>

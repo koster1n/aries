@@ -6,6 +6,7 @@ require('./css/style.css');
 // require('./css/style3.css');
 // require('./css/style4.css');
 // require('./css/style5.css');
+// require('./css/style6.css');
 
 require('angular');
 require('angular-ui-router');
