@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+div.menu{
+  /*width: 100%;*/
+  background-color: #fff;
+  height:100%;
+
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+
+  position: absolute;
+
+  font-family: 'arial', serif;
+}
+
+body {
+
+}
+
+.game-view {
+  padding: 0;
+  margin: auto;
+
+  width: 600px;
+  height: 600px;
+  display: block;
+
+  border:1px solid #000000;
+}
+
+.question {
+  margin : 10px;
+}
+
+.title{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.title-div {
+  background-color: #666;
+  width: 100%
+}
+
+.form-group {
+  margin-top: 50px;
+}
+
+.approach-content {
+  margin: 10px;
+}
+
+.approach-bullet-points {
+  font-size: 14px
+}
+
+#id1 .approach-bullet-points > a .btn-default{
+  font-size: 45px !important;
+}
+
+.content-main {
+  white-space: pre-wrap;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi|Roboto');
+
+.menu{
+  width: 80%;
+  height: 90%;
+  background-color: #d7c4d4;
+
+  border-radius: 10px 10px 30px 30px;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+
+  padding-top : 10px;
+  padding-bottom: 10px;
+
+  min-height: 500px;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.game-view {
+  padding: 0;
+  margin: auto;
+
+  width: 600px;
+  height: 600px;
+  display: block;
+
+  border:1px solid #000000;
+}
+
+.question {
+  margin : 10px;
+}
+
+.title{
+  font-weight: bold;
+  font-family: 'Abril Fatface', cursive;
+  padding: 5px;
+}
+
+.title-div {
+
+}
+
+.form-group {
+  margin-top: 50px;
+}
+
+.approach-content {
+  margin: 10px;
+}
+
+.approach-bullet-points {
+  font-size: 14px
+}
+
+#id1 .approach-bullet-points > a .btn-default{
+  font-size: 45px !important;
+}
+
+.content-main {
+  white-space: pre-wrap;
+}
+
+.btn-primary {
+  background-color: #576876
+}
