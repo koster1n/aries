@@ -7,7 +7,8 @@
 // require('./css/style4.css');
 // require('./css/style5.css');
 // require('./css/style6.css');
-require('./css/style7.css');
+// require('./css/style7.css');
+require('./css/Nov8.css');
 
 require('angular');
 require('angular-ui-router');

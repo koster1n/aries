@@ -60,6 +60,7 @@ body {
   color: #91907a;
   font-family: sans-serif;
   padding: 5px;
+  animation: burn 2s alternate infinite;
 }
 
 .title-div {

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@keyframes pulse-animation {
+  0%{background-color: #ff0505;}
+  25%{background-color: #600;}
+  50%{background-color: #ff0505;}
+  75%{background-color: #900;}
+}
+
+@keyframes burn {
+  0% { text-shadow: -.1em 0 .3em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .4em #ffae34, .2em -.3em .3em #ec760c, -.2em -.4em .4em #cd4606, .1em -.5em .7em #973716, .1em -.7em .7em #451b0e; }
+  45%  { text-shadow: .1em -.2em .5em #fefcc9, .15em 0 .4em #feec85, -.1em -.25em .5em #ffae34, .15em -.45em .5em #ec760c, -.1em -.5em .6em #cd4606, 0 -.8em .6em #973716, .2em -1em .8em #451b0e; }
+  70%  { text-shadow: -.1em 0 .3em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .6em #ffae34, .2em -.3em .4em #ec760c, -.2em -.4em .7em #cd4606, .1em -.5em .7em #973716, .1em -.7em .9em #451b0e; }
+  100% { text-shadow: -.1em -.2em .6em #fefcc9, -.15em 0 .6em #feec85, .1em -.25em .6em #ffae34, -.15em -.45em .5em #ec760c, .1em -.5em .6em #cd4606, 0 -.8em .6em #973716, -.2em -1em .8em #451b0e; }
+}
+
+.menu{
+  width: 80%;
+  height: 90%;
+
+  border-radius: 2px 2px 2px 2px;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+
+  padding-top : 10px;
+  padding-bottom: 10px;
+
+  min-height: 500px;
+
+  background-color: rgba(10,10,10, 0.85);
+
+  font-family: 'Oswald', sans-serif;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border: solid 3px #666;
+}
+
+body {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4) , rgba(200, 200, 200, 0.4), rgba(0, 0, 0, 0.9));
+
+  height: 100%;
+
+  background-color: #200;
+  animation: pulse-animation 12s alternate infinite;
+  transition: 1s;
+}
+
+.game-view {
+  padding: 0;
+  margin: auto;
+
+  width: 600px;
+  height: 600px;
+  display: block;
+
+  border:1px solid #000000;
+}
+
+.question {
+  margin : 10px;
+}
+
+.title{
+  font-weight: 900;
+  color: #ccc;
+  font-family: sans-serif;
+  padding: 5px;
+  animation: burn 1.5s linear infinite alternate;
+  transform:rotate(-15deg);
+}
+
+.title-div {
+
+}
+
+.form-group {
+  margin-top: 50px;
+}
+
+.approach-content {
+  margin: 10px;
+}
+
+.approach-bullet-points {
+  font-size: 14px
+}
+
+#id1 .approach-bullet-points > a .btn-default{
+  font-size: 45px !important;
+  transform:rotate(-15deg);
+}
+
+.form-group div:nth-child(n) {
+  transform:rotate(-15deg);
+}
+
+.form-group:nth-of-type(2n) {
+  transform:rotate(10deg);
+  animation: burn 1.5s linear infinite alternate;
+}
+
+.content-main {
+  white-space: pre-wrap;
+}
+
+.btn-primary {
+  background-color: #576876
+}
