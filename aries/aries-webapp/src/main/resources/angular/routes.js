@@ -7,7 +7,6 @@ module.exports = function(app){
 }
 
 function routes($urlRouterProvider, $stateProvider) {
-	$rootScope.progressbar = ngProgressFactory.createInstance();
 
 	$urlRouterProvider.otherwise('/home');
 	$urlRouterProvider.when('', '/home');
