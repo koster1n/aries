@@ -4,6 +4,8 @@ module.exports = function(app) {
 	app.controller('InformationPageController', InformationPageController);
 }
 
+require('./infoPage.css');
+
 function InformationPageController($scope, $stateParams, ContentService) {
 
 	$scope.info = ContentService.getContentInfo($stateParams.id);

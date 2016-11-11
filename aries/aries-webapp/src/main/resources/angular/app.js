@@ -7,8 +7,10 @@
 // require('./css/style4.css');
 // require('./css/style5.css');
 // require('./css/style6.css');
-// require('./css/style7.css');
-require('./css/Nov8.css');
+require('./css/style7.css');
+// require('./css/Nov8.css');
+
+require('./css/special.css');
 
 require('angular');
 require('angular-ui-router');
@@ -25,8 +27,9 @@ require("bootstrap-webpack");
 
 require('./home/home.controller.js')(module);
 
-require('./approach/approach.controller.js')(module);
 require('./informationPage/informationPage.controller.js')(module);
+require('./approach/approach.controller.js')(module);
+require('./quizPage/quizPage.controller.js')(module);
 
 require('./fun/fun.controller.js')(module);
 

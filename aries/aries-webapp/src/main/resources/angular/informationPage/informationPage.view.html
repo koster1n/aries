@@ -1,15 +1,15 @@
-<div class="menu">
-  <div class="title-div">
-    <h1 class="title text-center"> Overview </h1>
-  </div>
-    <div class ="approach-content" ng-repeat="headline in info.headlines">
-      <a class="btn btn-default" data-toggle="collapse" data-target="#id{{$index}}">
-        {{headline.title}}
-      </a>
-      <div id="id{{$index}}" class="collapse">
-        {{headline.info}}
-      </div>
+
+<div class="title-div">
+  <h1 class="title text-center"> Overview </h1>
+</div>
+<div class ="approach-content text-center">
+  <div ng-repeat="headline in info.headlines">
+    <a class="citation" data-toggle="collapse" data-target="#id{{$index}}">
+      {{headline.title}}
+    </a>
+    <div id="id{{$index}}" class="collapse">
+      {{headline.info}}
     </div>
-    <a class="btn btn-default" ng-click=""> Read quiz  </a>
-    <a class="btn btn-default" ui-sref="conflict.approach({id:{{id}}})"> Read content  </a>
+  </div>
+  <a class="btn-lg btn-default bottom-button footer" ui-sref="conflict.approach({id:{{id}}})"> Read content </a>
 </div>

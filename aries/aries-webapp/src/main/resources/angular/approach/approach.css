@@ -1,0 +1,22 @@
+.options {
+  margin: auto;
+  right: 50px;
+  left: 50px;
+  margin-bottom: 10px;
+  display: block;
+}
+.options>a {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5px;
+  right: 50px;
+  left: 50px;
+  display: block;
+}
+
+.content-main {
+  white-space: pre-wrap;
+  margin: 10px;
+  /*margin-bottom: 100px;*/
+  padding-bottom: 100px;
+}

@@ -4,9 +4,11 @@ module.exports = function(app) {
 	app.controller('ApproachController', ApproachController);
 }
 
-function ApproachController($scope, $stateParams, ContentService) {
+require("./approach.css");
+
+function ApproachController($scope, $stateParams, $uibModal, ContentService) {
 	$scope.contentPromise = ContentService.getContent($stateParams.id).then(function(data){
 		$scope.content = data;
 	});
-	// console.log($scope.content);
+	$scope.id = $stateParams.id;
 }

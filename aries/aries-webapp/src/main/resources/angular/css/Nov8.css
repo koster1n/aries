@@ -8,10 +8,24 @@
 }
 
 @keyframes burn {
-  0% { text-shadow: -.1em 0 .3em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .4em #ffae34, .2em -.3em .3em #ec760c, -.2em -.4em .4em #cd4606, .1em -.5em .7em #973716, .1em -.7em .7em #451b0e; }
+  0% { text-shadow: -.1em 0 4em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .4em #ffae34, .2em -.3em .3em #ec760c, -.2em -.4em .4em #cd4606, .1em -5px .7em #973716, .1em -.7em .7em #451b0e; }
   45%  { text-shadow: .1em -.2em .5em #fefcc9, .15em 0 .4em #feec85, -.1em -.25em .5em #ffae34, .15em -.45em .5em #ec760c, -.1em -.5em .6em #cd4606, 0 -.8em .6em #973716, .2em -1em .8em #451b0e; }
   70%  { text-shadow: -.1em 0 .3em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .6em #ffae34, .2em -.3em .4em #ec760c, -.2em -.4em .7em #cd4606, .1em -.5em .7em #973716, .1em -.7em .9em #451b0e; }
   100% { text-shadow: -.1em -.2em .6em #fefcc9, -.15em 0 .6em #feec85, .1em -.25em .6em #ffae34, -.15em -.45em .5em #ec760c, .1em -.5em .6em #cd4606, 0 -.8em .6em #973716, -.2em -1em .8em #451b0e; }
+}
+
+@keyframes fire {
+  0% { box-shadow:  10px 0 40px #fefcc9, 10px 10px 30px #feec85, -20px -20px 40px #ffae34, 20px -30px 30px #ec760c, -20px -40px 40px #cd4606, 10px -50px 70px #973716, 10px -70px 70px #451b0e;}
+  45% { box-shadow:  10px 0 20px #fefcc9, 15px 0px 40px #feec85, -10px -25px 50px #ffae34, 15px -45px 50px #ec760c, -10px -50px 60px #cd4606, 0px -80px 60px #973716, 20px -70px 70px #451b0e;}
+  70% { box-shadow:  10px 0 30px #fefcc9, 10px 10px 30px #feec85, -20px -20px 60px #ffae34, 20px -30px 40px #ec760c, -20px -40px 70px #cd4606, 10px -50px 70px #973716, 10px -7px 9px #451b0e;}
+  100% { box-shadow:  10px 0 20px #fefcc9, 15px 0px 60px #feec85, -10px -25px 60px #ffae34, 15px -45px 50px #ec760c, 10px -50px 60px #cd4606, 0px -80px 6px #973716, 2px -1px 8px #451b0e;}
+}
+
+@keyframes rotate {
+    0% {transform:rotate(-1deg);}
+    25% {transform:rotate(-90deg);}
+    50% {transform:rotate(-180deg);}
+    75% {transform:rotate(-360deg);}
 }
 
 .menu{
@@ -33,8 +47,8 @@
   background-color: rgba(10,10,10, 0.85);
 
   font-family: 'Oswald', sans-serif;
+  box-shadow:  1px 0 3px #fefcc9, 1px 1px 3px #feec85, -2px -2px 4px #ffae34, 2px -3px 3px #ec760c, -2px -4px 4px #cd4606, 1px -5px 7px #973716, 1px -7px 7px #451b0e;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   border: solid 3px #666;
 }
@@ -70,11 +84,11 @@ body {
   font-family: sans-serif;
   padding: 5px;
   animation: burn 1.5s linear infinite alternate;
-  transform:rotate(-15deg);
 }
 
 .title-div {
-
+  transform:rotate(-15deg);
+  animation: rotate 5s linear infinite;
 }
 
 .form-group {

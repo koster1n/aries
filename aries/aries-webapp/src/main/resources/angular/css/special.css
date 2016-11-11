@@ -1,0 +1,17 @@
+@media (max-width: 640px) {
+  body {
+    background: #000 !important;
+  }
+  div.container::before {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    content: "Your Screen is too %#$@ small for this app!";
+    color: #eee !important;
+    display:block;
+  }
+
+  div.menu {
+    display: none !important;
+  }
+}

@@ -7,51 +7,71 @@ module.exports = function(app){
 }
 
 function routes($urlRouterProvider, $stateProvider) {
-    $urlRouterProvider.otherwise('/home');
-		$urlRouterProvider.when('', '/home');
+	$rootScope.progressbar = ngProgressFactory.createInstance();
 
-    $stateProvider
-		.state('conflict', {
-			url:'',
-			template : require('html!./conflict/conflict.view.html')
-		})
+	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.when('', '/home');
 
-		.state('conflict.home', {
-			title: "Home",
-			url:'/home',
-			template : require('html!./home/home.view.html'),
-			controller : 'HomeController'
-		})
+	$stateProvider
+	.state('conflict', {
+		url:'',
+		template : require('html!./conflict/conflict.view.html')
+	})
 
-		.state('conflict.informationPage', {
-			title: "informationPage",
-			url:'/informationPage/:id',
-			template : require('html!./informationPage/informationPage.view.html'),
-			controller : 'InformationPageController',
-			params: {
-				id : null
-			}
-		})
+	.state('conflict.home', {
+		title: "Home",
+		url:'/home',
+		template : require('html!./home/home.view.html'),
+		controller : 'HomeController'
+	})
 
-		.state('conflict.approach', {
-			title: "Approach",
-			url:'/approach/:id',
-			template : require('html!./approach/approach.view.html'),
-			controller : 'ApproachController',
-			params: {
-				id : null
-			}
-		})
+	.state('conflict.informationPage', {
+		title: "informationPage",
+		url:'/informationPage/:id',
+		template : require('html!./informationPage/informationPage.view.html'),
+		controller : 'InformationPageController',
+		params: {
+			id : null
+		}
+	})
 
-		.state('fun', {
-			url:'/fun',
-			template : require('html!./fun/fun.view.html'),
-			controller : 'FunController',
-		})
+	.state('conflict.approach', {
+		title: "Approach",
+		url:'/approach/:id',
+		template : require('html!./approach/approach.view.html'),
+		controller : 'ApproachController',
+		params: {
+			id : null
+		}
+	})
+
+	.state('conflict.quiz', {
+		title: "Quiz",
+		url:'/quizPage/:id',
+		template : require('html!./quizPage/quizPage.view.html'),
+		controller : 'QuizPageController',
+		params: {
+			id : null
+		}
+	})
+
+	.state('fun', {
+		url:'/fun',
+		template : require('html!./fun/fun.view.html'),
+		controller : 'FunController',
+	})
 }
 
 function routeIntercept($rootScope, $state, $http) {
 	$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
 		$rootScope.pageTitle = toState.title;
 	});
+
+	$rootScope.$on("$routeChangeStart", function () {
+      $rootScope.progressbar.start();
+  });
+
+  $rootScope.$on("$routeChangeSuccess", function () {
+      $rootScope.progressbar.complete();
+  });
 }

@@ -1,13 +1,16 @@
-<div class="menu">
-  <div class="title-div">
-    <h1 class="title text-center">
-      {{content.title}}
-    </h1>
+<div class="title-div">
+  <h1 class="title text-center">
+    {{content.title}}
+  </h1>
+</div>
+
+<div class="approach-content">
+  <div class="content-main" ng-bind="content.content">
   </div>
 
-  <div class="approach-content">
-    <div class="content-main" ng-bind="content.content">
-    </div>
+  <div class ="footer options text-center">
+    <a class="btn-lg btn-default" ui-sref="conflict.quiz({id:0})"> Quiz </a>
+    <a class="btn-lg btn-default" ui-sref="conflict.home"> Home </a>
   </div>
-  <!-- <quiz quiz-id="0"></quiz> -->
+
 </div>

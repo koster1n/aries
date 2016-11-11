@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .menu{
+  position: relative;
   width: 80%;
-  height: 90%;
 
   border-radius: 2px 2px 2px 2px;
 
@@ -14,11 +14,15 @@
   padding-top : 10px;
   padding-bottom: 10px;
 
+  flex: 1;
+  height: auto;
   min-height: 500px;
+
 
   background-color: rgba(10,10,10, 0.85);
 
   font-family: 'Oswald', sans-serif;
+  color: #b4b4b4;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -27,25 +31,7 @@
 
 body {
   background: linear-gradient(to right, #fff , #ccc, #fff);
-
   background-color: #eee;
-
-  height: 100%;
-}
-
-.game-view {
-  padding: 0;
-  margin: auto;
-
-  width: 600px;
-  height: 600px;
-  display: block;
-
-  border:1px solid #000000;
-}
-
-.question {
-  margin : 10px;
 }
 
 .title{
@@ -55,30 +41,23 @@ body {
   padding: 5px;
 }
 
-.title-div {
-
-}
-
 .form-group {
   margin-top: 50px;
 }
 
-.approach-content {
-  margin: 10px;
-}
-
-.approach-bullet-points {
-  font-size: 14px
-}
-
-#id1 .approach-bullet-points > a .btn-default{
-  font-size: 45px !important;
-}
-
-.content-main {
-  white-space: pre-wrap;
-}
-
 .btn-primary {
   background-color: #576876
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+}
+
+.bottom-button {
+  text-align: center;
+  margin: auto;
+  right: 50px;
+  left: 50px;
+  margin-bottom: 10px;
 }

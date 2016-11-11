@@ -6,6 +6,8 @@ module.exports = function(app) {
 	app.factory('QuizService', QuizService);
 }
 
+require("./quiz.css");
+
 function quiz() {
   return {
 		restrict : 'E',
