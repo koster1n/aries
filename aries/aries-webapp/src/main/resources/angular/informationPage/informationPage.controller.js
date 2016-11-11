@@ -8,7 +8,9 @@ require('./infoPage.css');
 
 function InformationPageController($scope, $stateParams, ContentService) {
 
-	$scope.info = ContentService.getContentInfo($stateParams.id);
+	$scope.infoPromise = ContentService.getContentInfo($stateParams.id).then(function(data){
+
+	});
 
 
   $scope.info = {};

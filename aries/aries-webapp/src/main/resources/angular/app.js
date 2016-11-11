@@ -36,6 +36,7 @@ require('./fun/fun.controller.js')(module);
 
 //directives.
 require('./quiz/quiz.js')(module);
+require('./loading/loading.js')(module);
 require('./services/content.service.js')(module);
 
 require('./routes.js')(module);
