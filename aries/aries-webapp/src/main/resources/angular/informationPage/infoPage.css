@@ -2,8 +2,13 @@
   color: #b4b4b4;
 }
 
+a.citation {
+    cursor: pointer;
+}
+
 a.citation::selection,
 a.citation:hover {
   text-decoration: none;
+
   color: #c4c4c4;
 }
