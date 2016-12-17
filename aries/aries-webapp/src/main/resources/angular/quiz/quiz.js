@@ -19,10 +19,15 @@ function quiz() {
 	}
 }
 
-function QuizController($scope, QuizService) {
+function QuizController($scope, LoadingService, QuizService) {
 	$scope.questionsPromise = QuizService.getQuiz($scope.quizId).then(function(data) {
 		$scope.quiz = data;
 	});
+	LoadingService.setLoadingPromise($scope.questionsPromise);
+
+	$scope.checkAnswer = function(){
+		
+	}
 }
 
 function QuizService($http) {

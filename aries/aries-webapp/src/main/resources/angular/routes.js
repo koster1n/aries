@@ -26,21 +26,22 @@ function routes($urlRouterProvider, $stateProvider) {
 
 	.state('conflict.informationPage', {
 		title: "informationPage",
-		url:'/informationPage/:id',
+		url:'/informationPage/:chapterId',
 		template : require('html!./informationPage/informationPage.view.html'),
 		controller : 'InformationPageController',
 		params: {
-			id : null
+			chapterId: null,
 		}
 	})
 
 	.state('conflict.approach', {
 		title: "Approach",
-		url:'/approach/:id',
+		url:'/approach/:chapterId/:pageId',
 		template : require('html!./approach/approach.view.html'),
 		controller : 'ApproachController',
 		params: {
-			id : null
+			chapterId: null,
+			pageId : null
 		}
 	})
 
@@ -54,10 +55,10 @@ function routes($urlRouterProvider, $stateProvider) {
 		}
 	})
 
-	.state('fun', {
-		url:'/fun',
-		template : require('html!./fun/fun.view.html'),
-		controller : 'FunController',
+	.state('conflict.negotiate', {
+		url:'/negotiate',
+		template : require('html!./negotiate/negotiate.view.html'),
+		controller : 'NegotiateController',
 	})
 }
 

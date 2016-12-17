@@ -8,13 +8,13 @@ function ContentService() {
 
 function ContentService($http) {
 	return {
-		getContent : function (contentId) {
-			return $http.get("./api/content/" + contentId).then(function(response) {
+		getContent : function (chapterId, pageId) {
+			return $http.get("./api/content/" + chapterId + "/" + pageId).then(function(response) {
 				return response.data;
 			});
 		},
-    getContentInfo : function (contentId) {
-      return $http.get("./api/cite/" + contentId).then(function(response) {
+    getContentInfo : function (chapterId) {
+      return $http.get("./api/cite/" + chapterId).then(function(response) {
         return response.data;
       });
     }

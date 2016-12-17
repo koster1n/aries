@@ -31,7 +31,7 @@ require('./informationPage/informationPage.controller.js')(module);
 require('./approach/approach.controller.js')(module);
 require('./quizPage/quizPage.controller.js')(module);
 
-require('./fun/fun.controller.js')(module);
+require('./negotiate/negotiate.controller.js')(module);
 
 
 //directives.

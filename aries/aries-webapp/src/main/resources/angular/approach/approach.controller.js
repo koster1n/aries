@@ -6,9 +6,12 @@ module.exports = function(app) {
 
 require("./approach.css");
 
-function ApproachController($scope, $stateParams, $uibModal, ContentService) {
-	$scope.contentPromise = ContentService.getContent($stateParams.id).then(function(data){
+function ApproachController($scope, $stateParams, $uibModal, ContentService, LoadingService) {
+	$scope.contentPromise = ContentService.getContent($stateParams.chapterId, $stateParams.pageId).then(function(data){
 		$scope.content = data;
 	});
-	$scope.id = $stateParams.id;
+
+	LoadingService.setLoadingPromise($scope.contentPromise);
+	$scope.chapterId = $stateParams.chapterId;
+	$scope.pageId = +$stateParams.pageId + 1;
 }

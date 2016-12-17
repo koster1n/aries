@@ -3,6 +3,15 @@ package com.aries.DTO;
 
 public class ContentDTO {
 	private String title;
+	private String content;
+	private int length;
+	
+	public int getLength() {
+		return length;
+	}
+	public void setLength(int length) {
+		this.length = length;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -15,6 +24,5 @@ public class ContentDTO {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	private String content;
 	
 }

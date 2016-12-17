@@ -3,13 +3,13 @@
   <h1 class="title text-center"> Overview </h1>
 </div>
 <div class ="approach-content text-center">
-  <div ng-repeat="headline in info.headlines">
+  <div ng-repeat="work in workCited">
     <a class="citation" data-toggle="collapse" data-target="#id{{$index}}">
-      {{headline.title}}
+      {{work.title}}
     </a>
     <div id="id{{$index}}" class="collapse">
-      {{headline.info}}
+      {{work.author}}
     </div>
   </div>
-  <a class="btn-lg btn-default bottom-button footer" ui-sref="conflict.approach({id:{{id}}})"> Read content </a>
+  <a class="btn-lg btn-default bottom-button footer" ui-sref="conflict.approach({chapterId:{{chapterId}},pageId:0})"> Read content </a>
 </div>

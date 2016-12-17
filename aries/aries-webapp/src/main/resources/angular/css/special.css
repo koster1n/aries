@@ -6,7 +6,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
     text-align: center;
-    content: "Your Screen is too %#$@ small for this app!";
+    content: "Your Screen is too small for this app!";
     color: #eee !important;
     display:block;
   }

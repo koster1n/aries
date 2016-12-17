@@ -6,27 +6,16 @@ module.exports = function(app) {
 
 require('./infoPage.css');
 
-function InformationPageController($scope, $stateParams, ContentService) {
+function InformationPageController($scope, $stateParams, ContentService, LoadingService) {
 
-	$scope.infoPromise = ContentService.getContentInfo($stateParams.id).then(function(data){
-
+	$scope.workCited = []
+	$scope.infoPromise = ContentService.getContentInfo($stateParams.chapterId).then(function(data){
+		$scope.workCited = data;
 	});
 
+	LoadingService.setLoadingPromise($scope.infoPromise);
 
-  $scope.info = {};
-  $scope.test = "test";
-  $scope.info.headlines = [];
-  $scope.info.headlines[0] = {};
-  $scope.info.headlines[0].title = "Dogs";
-  $scope.info.headlines[0].info = "Are cool";
-
-  $scope.info.headlines[1] = {};
-  $scope.info.headlines[1].title = "Dogs2";
-  $scope.info.headlines[1].info = "Are smart";
-
-  $scope.info.citeing = "koster 2016";
-
-	$scope.id = $stateParams.id;
+	$scope.chapterId = $stateParams.chapterId;
 
 
 }

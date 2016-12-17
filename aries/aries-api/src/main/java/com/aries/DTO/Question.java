@@ -5,6 +5,7 @@ import java.util.List;
 public class Question {
 	private String question;
 	private List<String> options;
+	private int correct;
 
 	
 	public String getQuestion() {
@@ -19,5 +20,12 @@ public class Question {
 	}
 	public void setOptions(List<String> options) {
 		this.options = options;
+	}
+	
+	public int getAnswer() {
+		return correct;
+	}
+	public void setAnswer(int correct) {
+		this.correct = correct;
 	}
 }

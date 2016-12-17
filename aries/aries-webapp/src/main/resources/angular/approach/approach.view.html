@@ -1,4 +1,3 @@
-<loading promise="contentPromise"></loading>
 <div class="title-div">
   <h1 class="title text-center">
     {{content.title}}
@@ -10,8 +9,9 @@
   </div>
 
   <div class ="footer options text-center">
-    <a class="btn-lg btn-default" ui-sref="conflict.quiz({id:0})"> Quiz </a>
-    <a class="btn-lg btn-default" ui-sref="conflict.home"> Home </a>
+    <a ng-if="content.length > pageId" class="btn-lg btn-default" ui-sref="conflict.approach({chapterId:{{chapterId}}, pageId:{{pageId}}})"> Next </a>
+    <a ng-if="content.length <= pageId" class="btn-lg btn-default" ui-sref="conflict.quiz({chapterId:{{chapterId}}})"> Quiz </a>
+    <div>{{pageId}}/{{content.length}}</div>
   </div>
 
 </div>
