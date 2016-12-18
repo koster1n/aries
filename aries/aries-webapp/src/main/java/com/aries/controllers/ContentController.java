@@ -151,7 +151,7 @@ public class ContentController {
 		content[1][6] = new ContentDTO();
 		content[1][6].setTitle("MAPPING OUT THE WAY TO AGREEMENT");
 		content[1][6].setLength(content[1].length);
-		content[1][6].setContent("RECAP: We have discussed how our basic five barriers to cooperation and how our body language affects us. We then moved on to how we might possibly get past this, with a bit of preparation, and we identified the path to agreement. Now we will take a short quiz, and move on to our final section: Negotiation Strategies.");
+		content[1][6].setContent("RECAP: We have discussed how our basic five barriers to cooperation and how our body language affects us. We then moved on to how we might possibly get past this, with a bit of preparation, and we identified the path to agreement. Now we will take a short quiz.");
 		
 		return content[chapterId][pageId];
 	}

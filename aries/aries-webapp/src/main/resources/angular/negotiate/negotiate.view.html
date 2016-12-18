@@ -10,13 +10,13 @@
 <p class = "text-center"> Options </p>
 
 <div class="conversation-options">
-  <div class="bubble-employee selectable-bubble" class="" ng-if="employee.emotional != ''" ng-click="emotionalResponse()">
+  <div class="bubble-employee selectable-bubble" class="" ng-if="employee.emotional != ''" ng-click="response('emotional')">
     {{employee.agressive}}
   </div>
-  <div class="bubble-employee selectable-bubble" class="" ng-if="employee.agressive != ''" ng-click="aggressiveResponse()">
+  <div class="bubble-employee selectable-bubble" class="" ng-if="employee.agressive != ''" ng-click="response('aggressive')">
     {{employee.agressive}}
   </div>
-  <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="empatheticResponse()">
+  <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="response('empathetic')">
     {{employee.empathetic}}
   </div>
   <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="takeOffer()">
