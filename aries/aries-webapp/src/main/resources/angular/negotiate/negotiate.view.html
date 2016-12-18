@@ -1,10 +1,8 @@
 <span class="employee"> Employee: <input ng-model="employee.name"> </input> </span>
-<div class="conversation">
+<div id="conversation">
   <div class="bubble-other"> *You Walk into the room*</div>
-  <!-- {{history[0].text}} -->
   <div ng-repeat="message in history"
       class="{{message.user=='boss'? 'bubble-boss' : message.user=='other'? 'bubble-other': 'bubble-employee'}}">
-      test
     {{message.text}}
   </div>
 </div>
@@ -20,6 +18,9 @@
   </div>
   <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="empatheticResponse()">
     {{employee.empathetic}}
+  </div>
+  <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="takeOffer()">
+    Take salary of {{employee.offer.salary}}$/hr <span ng-if="employee.offer.jobSecurity"> with job security </span>
   </div>
   <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="useBatna()">
     {{employee.batna}}

@@ -1,14 +1,6 @@
 'use strict'
 
-// require('./css/style.css');
-// require('./css/style1.css');
-// require('./css/style2.css');
-// require('./css/style3.css');
-// require('./css/style4.css');
-// require('./css/style5.css');
-// require('./css/style6.css');
 require('./css/style7.css');
-// require('./css/Nov8.css');
 
 require('./css/special.css');
 
@@ -33,6 +25,7 @@ require('./quiz/failed/failedModel.controller.js')(module);
 require('./quizPage/quizPage.controller.js')(module);
 
 require('./negotiate/negotiate.controller.js')(module);
+require('./negotiate/prompts/message.controller.js')(module);
 
 
 //directives.

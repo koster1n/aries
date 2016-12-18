@@ -1,9 +1,12 @@
-.conversation {
-  overflow: scroll;
+#conversation {
+  overflow-y: scroll;
 
+  background-color: #000;
   height: 500px;
   border: solid 3px #666;
   margin: 10px;
+
+  transition: all 0.5s;
 }
 
 .conversation-options {
@@ -51,4 +54,8 @@
 .employee input {
   background-color: #333;
   text-align: center;
+}
+
+.define-batna {
+  
 }

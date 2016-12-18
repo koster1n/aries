@@ -12,3 +12,18 @@ a.citation:hover {
 
   color: #c4c4c4;
 }
+
+.pre-content {
+  display: block;
+  position: relative;
+  white-space: pre-wrap;
+}
+
+.approach-content {
+  display: block;
+  position: relative;
+}
+
+.buttons-bottom {
+  display: block;
+}
