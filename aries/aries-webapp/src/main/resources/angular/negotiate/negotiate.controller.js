@@ -7,27 +7,29 @@ module.exports = function(app) {
 }
 
 
-var aggressiveResponse = [
-	'Jim, I feel like that is a ridiculous amount to offer, given my productivity level at work.',
-	'I want a raise that equals my productivity levels at work.',
-	'It would be an insult to my work ethic to accept an offer that low.',
-	'Can’t you offer me any kind of permanent position? I don’t care about the others in the office.',
-	'Why should the government’s mismanagement of funds be my fault? I deserve this raise!',
-	'I want at least $35.00/hour, and I am committed to leaving if I can’t get this.',
-	'Other people in the office are ridiculously slow at their job, I deserve compensation!'
-];
-
-var empatheticResponse = [
-	'Jim, I need to start saving for my children’s education, and this offer unfortunately does not allow me to do this.',
-	'Jim, is there any way you could increase this offer? I understand the financial constraints, but I need to think about the future and I would like that future to be with the Ministry of Justice.',
-	'I would very much like to accept that offer, but I really need a little bit more, is there anything in the budget?',
-	'I really love this work environment, and this I could continue excelling at my current position, but I really need more job security.',
-	'Jim, you know I appreciate your work and the hard situation you have been put in. Can we go any higher with this raise? Or possibly more job] security?',
-	'I will need some job security to allow me to buy a house for my children, is there any way we could include this instead of a higher wage?',
-	'Jim, I understand you need to consider your interests in this, and that there are others in the office. However, I need to think of my family, so is there any more you can offer me?'
-];
-
 function NegotiateController($scope, $state, $timeout, $uibModal) {
+
+	var aggressiveResponse = [
+		'Jim, I feel like that is a ridiculous amount to offer, given my productivity level at work.',
+		'I want a raise that equals my productivity levels at work.',
+		'It would be an insult to my work ethic to accept an offer that low.',
+		'Can’t you offer me any kind of permanent position? I don’t care about the others in the office.',
+		'Why should the government’s mismanagement of funds be my fault? I deserve this raise!',
+		'I want at least $35.00/hour, and I am committed to leaving if I can’t get this.',
+		'Other people in the office are ridiculously slow at their job, I deserve compensation!'
+	];
+
+	var empatheticResponse = [
+		'Jim, I need to start saving for my children’s education, and this offer unfortunately does not allow me to do this.',
+		'Jim, is there any way you could increase this offer? I understand the financial constraints, but I need to think about the future and I would like that future to be with the Ministry of Justice.',
+		'I would very much like to accept that offer, but I really need a little bit more, is there anything in the budget?',
+		'I really love this work environment, and this I could continue excelling at my current position, but I really need more job security.',
+		'Jim, you know I appreciate your work and the hard situation you have been put in. Can we go any higher with this raise? Or possibly more job] security?',
+		'I will need some job security to allow me to buy a house for my children, is there any way we could include this instead of a higher wage?',
+		'Jim, I understand you need to consider your interests in this, and that there are others in the office. However, I need to think of my family, so is there any more you can offer me?'
+	];
+
+
 	$scope.boss = generateBoss();
 	$scope.employee = generateEmployeeGoals();
 
@@ -48,7 +50,6 @@ function NegotiateController($scope, $state, $timeout, $uibModal) {
 	}
 
 	$scope.response = function(type){
-		console.log(type);
 		if($scope.boss.patients <= 0) {
 			$scope.endGameMessage("*Jim got bored and left.*");
 		}
@@ -59,8 +60,8 @@ function NegotiateController($scope, $state, $timeout, $uibModal) {
 			$scope.aggressiveResponse();
 		}
 
-		var posEmp =Math.floor(Math.random() * empatheticResponse.length);
-		var posAgr =Math.floor(Math.random() * aggressiveResponse.length);
+		var posEmp = Math.floor(Math.random() * empatheticResponse.length);
+		var posAgr = Math.floor(Math.random() * aggressiveResponse.length);
 
 		$scope.employee.empathetic = empatheticResponse.splice(posEmp, 1);
 		$scope.employee.empathetic = $scope.employee.empathetic[0];
