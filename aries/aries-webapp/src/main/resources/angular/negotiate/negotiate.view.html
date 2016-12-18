@@ -1,0 +1,32 @@
+<span class="employee"> Employee: <input ng-model="employee.name"> </input> </span>
+<div class="conversation">
+  <div class="bubble-other"> *You Walk into the room*</div>
+  <!-- {{history[0].text}} -->
+  <div ng-repeat="message in history"
+      class="{{message.user=='boss'? 'bubble-boss' : message.user=='other'? 'bubble-other': 'bubble-employee'}}">
+      test
+    {{message.text}}
+  </div>
+</div>
+
+<p class = "text-center"> Options </p>
+
+<div class="conversation-options">
+  <div class="bubble-employee selectable-bubble" class="" ng-if="employee.emotional != ''" ng-click="emotionalResponse()">
+    {{employee.agressive}}
+  </div>
+  <div class="bubble-employee selectable-bubble" class="" ng-if="employee.agressive != ''" ng-click="aggressiveResponse()">
+    {{employee.agressive}}
+  </div>
+  <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="empatheticResponse()">
+    {{employee.empathetic}}
+  </div>
+  <div class="bubble-employee selectable-bubble" ng-if="employee.empathetic != ''" ng-click="useBatna()">
+    {{employee.batna}}
+  </div>
+</div>
+
+
+<div class="options">
+  <a class="btn-lg btn-default text-center" ui-sref="conflict.home"> Home </a>
+</div>

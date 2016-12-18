@@ -29,6 +29,7 @@ require('./home/home.controller.js')(module);
 
 require('./informationPage/informationPage.controller.js')(module);
 require('./approach/approach.controller.js')(module);
+require('./quiz/failed/failedModel.controller.js')(module);
 require('./quizPage/quizPage.controller.js')(module);
 
 require('./negotiate/negotiate.controller.js')(module);

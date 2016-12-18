@@ -1,0 +1,54 @@
+.conversation {
+  overflow: scroll;
+
+  height: 500px;
+  border: solid 3px #666;
+  margin: 10px;
+}
+
+.conversation-options {
+  overflow-y: auto;
+  height: 200px;
+  border: solid 3px #666;
+  margin: 10px;
+}
+
+.bubble-boss,
+.bubble-employee,
+.bubble-other
+{
+  border-radius: 25px;
+  padding: 20px;
+  margin: 5px;
+  color: #111;
+}
+
+.bubble-boss {
+  background-color: #488a44;
+}
+
+.bubble-employee {
+  background-color: #8da235;
+}
+
+.bubble-employee.selectable-bubble:hover {
+  background-color: #71812b;
+  cursor:pointer;
+}
+.bubble-other {
+  background-color: #b1b1b1;
+}
+
+.employee {
+  display: inline-block;
+  width: 100%;
+  /*float: center;*/
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.employee input {
+  background-color: #333;
+  text-align: center;
+}

@@ -1,9 +1,9 @@
-<form  ng-repeat="question in quiz.questions" ng-init="parentIndex = $index" class="question" ng-click="checkAnswer()">
+<form  ng-repeat="question in quiz.questions" ng-init="parentIndex = $index" class="question">
   <h3> {{question.question}} </h3>
   <ul>
     <li ng-repeat="answer in question.options">
       <label>
-        <input id="{{question$index}}" type="radio" name="parentIndex" ng-click="disabled[$index] = true" ng=disabled="disabled[$index]"/> {{answer}} <br/>
+        <input id="{{question$index}}" type="radio" name="parentIndex" ng-click="checkAnswer(parentIndex, $index)"/> {{answer}} <br/>
       </label>
     </li>
   </ul>

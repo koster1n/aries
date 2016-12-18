@@ -10,7 +10,7 @@
 
   <div class ="footer options text-center">
     <a ng-if="content.length > pageId" class="btn-lg btn-default" ui-sref="conflict.approach({chapterId:{{chapterId}}, pageId:{{pageId}}})"> Next </a>
-    <a ng-if="content.length <= pageId" class="btn-lg btn-default" ui-sref="conflict.quiz({chapterId:{{chapterId}}})"> Quiz </a>
+    <a ng-if="content.length <= pageId" class="btn-lg btn-default" ui-sref="conflict.home"> Home </a>
     <div>{{pageId}}/{{content.length}}</div>
   </div>
 

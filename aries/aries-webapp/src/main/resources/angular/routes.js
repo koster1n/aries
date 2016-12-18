@@ -55,6 +55,11 @@ function routes($urlRouterProvider, $stateProvider) {
 		}
 	})
 
+	.state('conflict.negotiateDescription', {
+		url:'/negotiateDescription',
+		template : require('html!./negotiatorDescription/negotiatorDescription.view.html')
+	})
+
 	.state('conflict.negotiate', {
 		url:'/negotiate',
 		template : require('html!./negotiate/negotiate.view.html'),
